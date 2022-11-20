@@ -1,1 +1,0 @@
-cmd_/home/xxl/桌面/Assignment_1_120090484/source/program2/Module.symvers := sed 's/ko$$/o/' /home/xxl/桌面/Assignment_1_120090484/source/program2/modules.order | scripts/mod/modpost -m -a   -o /home/xxl/桌面/Assignment_1_120090484/source/program2/Module.symvers -e -i Module.symvers   -T -

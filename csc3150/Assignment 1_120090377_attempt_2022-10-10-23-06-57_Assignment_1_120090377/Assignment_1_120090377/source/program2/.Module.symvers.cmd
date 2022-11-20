@@ -1,1 +1,0 @@
-cmd_/home/vagrant/csc3050/Assignment_1_120090377_T2/source/program2/Module.symvers := sed 's/ko$$/o/' /home/vagrant/csc3050/Assignment_1_120090377_T2/source/program2/modules.order | scripts/mod/modpost -m -a   -o /home/vagrant/csc3050/Assignment_1_120090377_T2/source/program2/Module.symvers -e -i Module.symvers   -T -
