@@ -1,0 +1,36 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2'
+ 
+make -C /lib/modules/4.10.14/build M=/home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2 modules
+ 
+make[1]: Entering directory '/home/chen/happy/linux-4.10.14'
+ 
+# Do not try to update included dependency files
+ 
+mkdir -p /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/.tmp_versions ; rm -f /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/.tmp_versions/*
+test -e ./Module.symvers || ( \
+echo; \
+echo "  WARNING: Symbol version dump ./Module.symvers"; \
+echo "           is missing; modules will have no dependencies and modversions."; \
+echo )
+make -f ./scripts/Makefile.build obj=/home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2
+ 
+set -e; 	   echo '  CC [M]  /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/program2.o'; gcc -Wp,-MD,/home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/.program2.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/5/include -I./arch/x86/include -I./arch/x86/include/generated/uapi -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -fno-delete-null-pointer-checks -O2 --param=allow-store-data-races=0 -DCC_HAVE_ASM_GOTO -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -gdwarf-4 -pg -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types  -DMODULE  -DKBUILD_BASENAME='"program2"'  -DKBUILD_MODNAME='"program2"' -c -o /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/program2.o /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/program2.c; scripts/basic/fixdep /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/.program2.o.d /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/program2.o 'gcc -Wp,-MD,/home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/.program2.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/5/include -I./arch/x86/include -I./arch/x86/include/generated/uapi -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -fno-delete-null-pointer-checks -O2 --param=allow-store-data-races=0 -DCC_HAVE_ASM_GOTO -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -gdwarf-4 -pg -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types  -DMODULE  -DKBUILD_BASENAME='\''"program2"'\''  -DKBUILD_MODNAME='\''"program2"'\'' -c -o /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/program2.o /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/program2.c' > /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/.program2.o.tmp; rm -f /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/.program2.o.d; mv -f /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/.program2.o.tmp /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/.program2.o.cmd;   ./tools/objtool/objtool check "/home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/program2.o";  if [ "-pg" = "-pg" ]; then if [ /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/program2.o != "scripts/mod/empty.o" ]; then ./scripts/recordmcount  "/home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/program2.o"; fi; fi;
+{ echo /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/program2.ko; echo /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/program2.o; \
+   echo; } > /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/.tmp_versions/program2.mod
+(cat /dev/null;   echo kernel//home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/program2.ko;) > /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/modules.order
+:
+ 
+echo '  Building modules, stage 2.';
+make -f ./scripts/Makefile.modpost
+ 
+find:  
+'/home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/.tmp_versions' 
+: No such file or directory 
+
+ 
+echo '  MODPOST 0 modules'; find /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/.tmp_versions -name '*.mod' | xargs -r grep -h '\.ko$' | sort -u | sed 's/\.ko$/.o/' | scripts/mod/modpost  -a -i ./Module.symvers -I /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/Module.symvers  -o /home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2/Module.symvers -S  -w  -s -T - vmlinux
+make[1]: Leaving directory '/home/chen/happy/linux-4.10.14'
+ 
+make: Leaving directory '/home/chen/Desktop/csc3150/Assignment_1_119010029/source/program2'
+ 

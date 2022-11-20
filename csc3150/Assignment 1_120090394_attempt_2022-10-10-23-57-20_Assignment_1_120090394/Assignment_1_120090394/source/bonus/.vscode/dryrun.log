@@ -1,0 +1,29 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/chen/Desktop/csc3150/source/bonus'
+ 
+cc -o abort abort.c
+cc -o alarm alarm.c
+cc -o bus bus.c
+cc -o floating floating.c
+cc -o hangup hangup.c
+cc -o illegal_instr illegal_instr.c
+cc -o interrupt interrupt.c
+cc -o kill kill.c
+cc -o myfork myfork.c
+cc -o normal1 normal1.c
+cc -o normal10 normal10.c
+cc -o normal2 normal2.c
+cc -o normal3 normal3.c
+cc -o normal4 normal4.c
+cc -o normal5 normal5.c
+cc -o normal6 normal6.c
+cc -o normal7 normal7.c
+cc -o normal8 normal8.c
+cc -o normal9 normal9.c
+cc -o pipe pipe.c
+cc -o quit quit.c
+cc -o segment_fault segment_fault.c
+cc -o terminate terminate.c
+cc -o trap trap.c
+make: Leaving directory '/home/chen/Desktop/csc3150/source/bonus'
+ 

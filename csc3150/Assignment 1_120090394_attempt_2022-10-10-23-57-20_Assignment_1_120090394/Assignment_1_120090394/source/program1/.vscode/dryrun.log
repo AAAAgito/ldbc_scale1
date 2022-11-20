@@ -1,0 +1,20 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/chen/Desktop/csc3150/source/program1'
+cc -o abort abort.c
+cc -o alarm alarm.c
+cc -o bus bus.c
+cc -o floating floating.c
+cc -o hangup hangup.c
+cc -o illegal_instr illegal_instr.c
+cc -o interrupt interrupt.c
+cc -o kill kill.c
+cc -o normal normal.c
+cc -o pipe pipe.c
+cc -o program1 program1.c
+cc -o quit quit.c
+cc -o segment_fault segment_fault.c
+cc -o stop stop.c
+cc -o terminate terminate.c
+cc -o trap trap.c
+make: Leaving directory '/home/chen/Desktop/csc3150/source/program1'
+ 

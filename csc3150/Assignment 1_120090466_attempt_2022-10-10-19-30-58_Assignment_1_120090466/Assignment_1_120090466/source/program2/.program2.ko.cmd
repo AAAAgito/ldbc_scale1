@@ -1,0 +1,1 @@
+cmd_/home/vagrant/seed/Assignment_1_120090466/source/program2/program2.ko := ld -r  -m elf_x86_64 -z noexecstack   --build-id=sha1  -T scripts/module.lds -o /home/vagrant/seed/Assignment_1_120090466/source/program2/program2.ko /home/vagrant/seed/Assignment_1_120090466/source/program2/program2.o /home/vagrant/seed/Assignment_1_120090466/source/program2/program2.mod.o;  true

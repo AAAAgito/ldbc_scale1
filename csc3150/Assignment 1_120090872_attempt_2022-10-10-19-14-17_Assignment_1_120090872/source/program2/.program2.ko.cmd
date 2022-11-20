@@ -1,0 +1,1 @@
+cmd_/home/lab24/桌面/source/program2/program2.ko := ld -r -m elf_x86_64 --build-id=sha1  -T scripts/module.lds -o /home/lab24/桌面/source/program2/program2.ko /home/lab24/桌面/source/program2/program2.o /home/lab24/桌面/source/program2/program2.mod.o;  true

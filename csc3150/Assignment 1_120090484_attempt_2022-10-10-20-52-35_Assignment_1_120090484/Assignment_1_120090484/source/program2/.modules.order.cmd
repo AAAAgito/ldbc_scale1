@@ -1,0 +1,1 @@
+cmd_/home/xxl/桌面/Assignment_1_120090484/source/program2/modules.order := {   echo /home/xxl/桌面/Assignment_1_120090484/source/program2/program2.ko; :; } | awk '!x[$$0]++' - > /home/xxl/桌面/Assignment_1_120090484/source/program2/modules.order

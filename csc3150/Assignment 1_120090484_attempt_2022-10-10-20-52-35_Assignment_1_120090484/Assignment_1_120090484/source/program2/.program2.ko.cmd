@@ -1,0 +1,1 @@
+cmd_/home/xxl/桌面/Assignment_1_120090484/source/program2/program2.ko := ld -r -m elf_x86_64 --build-id=sha1  -T scripts/module.lds -o /home/xxl/桌面/Assignment_1_120090484/source/program2/program2.ko /home/xxl/桌面/Assignment_1_120090484/source/program2/program2.o /home/xxl/桌面/Assignment_1_120090484/source/program2/program2.mod.o;  true
